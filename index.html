@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unicorn Dogs - Exceptionally trained rescue dogs ready for your family. Skip the puppy chaos with professionally trained, well-behaved companions in Albuquerque, New Mexico.">
+    <meta name="keywords" content="trained dogs, rescue dogs, dog training, Albuquerque, family dogs, professional dog training, well-behaved dogs">
+    <meta name="author" content="Unicorn Dogs">
+    <meta property="og:title" content="Unicorn Dogs - Exceptionally Trained Dogs, Ready for Your Family">
+    <meta property="og:description" content="Skip the headache. Meet your dream dog today. Professionally trained rescue dogs ready to seamlessly join your life.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./unicorn-dogs-logo.png">
+    <title>Unicorn Dogs - Exceptionally Trained Dogs, Ready for Your Family</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --rich-brown: #3D2914;
+            --warm-cream: #FBF8F5;
+            --deep-charcoal: #1A1A1A;
+            --soft-ivory: #FFFEF9;
+            --muted-sage: #7A8471;
+            --luxury-black: #000000;
+            --champagne: #F7E7CE;
+            --pearl-white: #FEFEFE;
+            --gold-base: #FFD700;
+            --gold-light: #FFF700;
+            --gold-dark: #FF8C00;
+            --deep-navy: #0066FF;
+            --rich-burgundy: #FF1744;
+            --forest-green: #00E676;
+            --bright-purple: #9C27B0;
+            --electric-cyan: #00E5FF;
+        }
+
+        /* Enhanced Gold Foil Effect */
+        .gold-foil {
+            background: linear-gradient(
+                45deg,
+                #B8860B 0%,
+                #D4AF37 25%,
+                #FFE55C 45%,
+                #D4AF37 65%,
+                #B8860B 100%
+            );
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: subtleGoldShimmer 8s ease-in-out infinite;
+            filter: drop-shadow(0 2px 6px rgba(212, 175, 55, 0.4));
+        }
+
+        @keyframes subtleGoldShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .gold-foil-bg {
+            background: linear-gradient(
+                135deg,
+                #2d2d2d 0%,
+                #B8860B 30%,
+                #D4AF37 50%,
+                #B8860B 70%,
+                #2d2d2d 100%
+            );
+            background-size: 300% 300%;
+            animation: subtleBackgroundShimmer 10s ease-in-out infinite;
+        }
+
+        @keyframes subtleBackgroundShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .embossed-gold {
+            background: linear-gradient(145deg, #FFE55C, #B8860B);
+            border: 2px solid #D4AF37;
+            box-shadow: 
+                inset 0 2px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+                0 6px 12px rgba(212, 175, 55, 0.3),
+                0 12px 24px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .embossed-gold::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        /* Enhanced Depth and Layering */
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            background: 
+                linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                var(--soft-ivory);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="20" cy="20" r="0.5" fill="%23D4AF37" opacity="0.1"/><circle cx="80" cy="40" r="0.3" fill="%23B8860B" opacity="0.15"/><circle cx="40" cy="70" r="0.4" fill="%23FFE55C" opacity="0.08"/><circle cx="70" cy="10" r="0.2" fill="%23D4AF37" opacity="0.12"/><circle cx="10" cy="90" r="0.6" fill="%23B8860B" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .serif-heading {
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .luxury-text {
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.8;
+        }
+
+        /* Enhanced Header with Depth */
+        header {
+            background: rgba(251, 248, 245, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            box-shadow: 
+                0 4px 20px rgba(212, 175, 55, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.02) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        header.scrolled {
+            background: rgba(26, 26, 26, 0.95);
+            border-bottom-color: var(--gold-base);
+        }
+
+        header.scrolled .nav-links a {
+            color: var(--warm-cream);
+        }
+
+        header.scrolled .logo-text {
+            color: var(--warm-cream);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 4rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .logo-image {
+            width: 90px;
+            height: 90px;
+            background: url('./unicorn-dogs-logo.png') center/contain no-repeat;
+            filter: drop-shadow(0 8px 16px rgba(212, 175, 55, 0.4));
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--rich-brown);
+            letter-spacing: 0.1em;
+            transition: color 0.4s ease;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--rich-brown);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--gold-base);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            padding: 1.2rem 3rem;
+            border: 2px solid var(--deep-navy);
+            border-radius: 50px;
+            color: var(--warm-cream);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 102, 255, 0.6);
+            background: linear-gradient(135deg, var(--electric-cyan) 0%, var(--bright-purple) 50%, var(--forest-green) 100%);
+        }
+
+        /* Enhanced Hero with Multi-layered Depth */
+        .hero {
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, var(--champagne) 0%, var(--warm-cream) 50%, var(--soft-ivory) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 150px 0 100px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800"><defs><radialGradient id="sparkle1"><stop offset="0%" stop-color="%23FFE55C" stop-opacity="0.8"/><stop offset="100%" stop-color="%23D4AF37" stop-opacity="0"/></radialGradient><radialGradient id="sparkle2"><stop offset="0%" stop-color="%23D4AF37" stop-opacity="0.6"/><stop offset="100%" stop-color="%23B8860B" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="150" r="6" fill="url(%23sparkle1)"/><circle cx="500" cy="250" r="4" fill="url(%23sparkle2)"/><circle cx="800" cy="180" r="8" fill="url(%23sparkle1)"/><circle cx="1100" cy="300" r="5" fill="url(%23sparkle2)"/><circle cx="300" cy="400" r="3" fill="url(%23sparkle1)"/><circle cx="900" cy="450" r="7" fill="url(%23sparkle2)"/></svg>');
+            opacity: 0.7;
+            animation: floatingSparkles 8s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 48%, rgba(212, 175, 55, 0.03) 50%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, rgba(212, 175, 55, 0.03) 50%, transparent 52%);
+            background-size: 60px 60px;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @keyframes floatingSparkles {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+            33% { transform: translateY(-20px) scale(1.1); opacity: 1; }
+            66% { transform: translateY(-10px) scale(0.9); opacity: 0.8; }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 4rem;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(1px);
+            border-radius: 30px;
+            box-shadow: 
+                0 20px 60px rgba(212, 175, 55, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 6.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            color: var(--muted-sage);
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-description {
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+            color: var(--rich-brown);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            padding: 2rem 4rem;
+            border: 3px solid var(--deep-navy);
+            border-radius: 60px;
+            color: var(--warm-cream);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 102, 255, 0.5);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(0, 102, 255, 0.7);
+            background: linear-gradient(135deg, var(--electric-cyan) 0%, var(--bright-purple) 30%, var(--forest-green) 70%, var(--rich-burgundy) 100%);
+        }
+
+        /* Enhanced Section Styling */
+        .section {
+            padding: 10rem 0;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 4rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            text-align: center;
+            margin-bottom: 6rem;
+            font-weight: 600;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            border-radius: 2px;
+        }
+
+        /* Enhanced Card System with Depth */
+        .premium-card {
+            background: 
+                linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(251, 248, 245, 0.8)),
+                var(--pearl-white);
+            border-radius: 30px;
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s ease;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 
+                0 15px 35px rgba(212, 175, 55, 0.1),
+                0 5px 15px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: var(--gold-foil-bg);
+            box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+        }
+
+        .premium-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 30%),
+                linear-gradient(45deg, transparent 70%, rgba(212, 175, 55, 0.02) 100%);
+            pointer-events: none;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-25px) scale(1.03);
+            box-shadow: 
+                0 60px 140px rgba(212, 175, 55, 0.25),
+                0 20px 60px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        }
+
+        /* The Smart Alternative Section */
+        .smart-alternative {
+            background: linear-gradient(135deg, var(--warm-cream) 0%, var(--champagne) 100%);
+        }
+
+        .alternative-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 4rem;
+            margin: 6rem 0;
+        }
+
+        /* Enhanced Gallery with Masonry Layout */
+        .gallery-section {
+            background: linear-gradient(135deg, var(--champagne) 0%, var(--warm-cream) 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin: 6rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: all 0.6s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:nth-child(4n+1) { height: 400px; }
+        .gallery-item:nth-child(4n+2) { height: 320px; }
+        .gallery-item:nth-child(4n+3) { height: 380px; }
+        .gallery-item:nth-child(4n+4) { height: 350px; }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            border-radius: 29px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05) rotate(1deg);
+            z-index: 10;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.15);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            color: white;
+            padding: 3rem 2rem 2rem;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Case Studies Enhanced */
+        .case-studies {
+            background: linear-gradient(135deg, var(--soft-ivory) 0%, var(--warm-cream) 100%);
+        }
+
+        .case-study {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 5rem;
+            align-items: center;
+            margin: 8rem 0;
+        }
+
+        .case-study:nth-child(even) {
+            grid-template-columns: 1fr 400px;
+        }
+
+        .case-image {
+            width: 400px;
+            height: 320px;
+            border-radius: 25px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: all 0.6s ease;
+        }
+
+        .case-image::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            background: var(--gold-foil-bg);
+            border-radius: 31px;
+            z-index: -1;
+        }
+
+        .case-image:hover {
+            transform: scale(1.08) rotate(3deg);
+        }
+
+        .case-image-1 { 
+            background: url('https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=800&h=640&fit=crop&auto=format') center/cover no-repeat;
+        }
+        
+        .case-image-2 { 
+            background: url('https://images.unsplash.com/photo-1544568100-847a948585b9?w=800&h=640&fit=crop&auto=format') center/cover no-repeat;
+        }
+
+        .luxury-quote {
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: var(--rich-brown);
+            margin: 3rem 0;
+            padding: 3rem;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 20px;
+            border-left: 6px solid var(--gold-base);
+            position: relative;
+        }
+
+        .luxury-quote::before,
+        .luxury-quote::after {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5rem;
+            color: var(--gold-base);
+            position: absolute;
+            font-weight: 700;
+        }
+
+        .luxury-quote::before {
+            content: '"';
+            top: 15px;
+            left: 20px;
+        }
+
+        .luxury-quote::after {
+            content: '"';
+            bottom: -30px;
+            right: 20px;
+        }
+
+        .case-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .detail-card {
+            background: var(--pearl-white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid var(--gold-base);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .detail-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gold-foil-bg);
+            border-radius: 22px;
+            z-index: -1;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-8px) scale(1.05);
+        }
+
+        /* Features Section Enhanced */
+        .features-section {
+            background: var(--luxury-black);
+            color: var(--warm-cream);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            margin: 6rem 0;
+        }
+
+        /* Enhanced Features with 3D Depth */
+        .luxury-feature {
+            text-align: center;
+            padding: 3rem;
+            background: 
+                linear-gradient(145deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.08)),
+                rgba(212, 175, 55, 0.1);
+            border-radius: 25px;
+            border: 1px solid var(--gold-base);
+            transition: all 0.6s ease;
+            position: relative;
+            box-shadow: 
+                0 10px 25px rgba(212, 175, 55, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .luxury-feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gold-foil-bg);
+            opacity: 0;
+            border-radius: 25px;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .luxury-feature::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.3), transparent, rgba(212, 175, 55, 0.3));
+            border-radius: 27px;
+            z-index: -2;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .luxury-feature:hover::before {
+            opacity: 0.2;
+        }
+
+        .luxury-feature:hover::after {
+            opacity: 1;
+        }
+
+        .luxury-feature:hover {
+            transform: translateY(-20px) scale(1.08);
+            box-shadow: 
+                0 30px 70px rgba(212, 175, 55, 0.3),
+                0 10px 30px rgba(0, 0, 0, 0.15),
+                inset 0 2px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+            box-shadow: 
+                0 10px 25px rgba(212, 175, 55, 0.2),
+                inset 0 2px 4px rgba(255, 255, 255, 0.3),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .feature-icon svg {
+            width: 60px;
+            height: 60px;
+            filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
+        }
+
+        .luxury-feature h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Trainer Section Enhanced */
+        .trainer-section {
+            background: var(--rich-brown);
+            color: var(--warm-cream);
+        }
+
+        .trainer-content {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .trainer-image {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--rich-brown);
+            position: relative;
+            margin: 0 auto;
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+            box-shadow: 
+                0 20px 50px rgba(212, 175, 55, 0.2),
+                inset 0 4px 8px rgba(255, 255, 255, 0.3),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .trainer-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--gold-foil-bg);
+            z-index: -1;
+        }
+
+        .trainer-image svg {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3));
+        }
+
+        .media-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .media-badge {
+            background: rgba(212, 175, 55, 0.15);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            border: 2px solid var(--gold-base);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .media-badge:hover {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            color: var(--warm-cream);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 102, 255, 0.4);
+        }
+
+        /* Enhanced Contact Form */
+        .contact-section {
+            background: linear-gradient(135deg, var(--champagne) 0%, var(--warm-cream) 100%);
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--pearl-white);
+            border-radius: 30px;
+            padding: 5rem;
+            border: 3px solid var(--gold-base);
+            position: relative;
+        }
+
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: var(--gold-foil-bg);
+            border-radius: 33px;
+            z-index: -1;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: var(--rich-brown);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.8rem;
+            border: 3px solid var(--gold-base);
+            border-radius: 15px;
+            font-size: 1.1rem;
+            background: var(--soft-ivory);
+            transition: all 0.4s ease;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--gold-dark);
+            background: var(--pearl-white);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-group.error input,
+        .form-group.error textarea,
+        .form-group.error select {
+            border-color: var(--rich-burgundy) !important;
+            background: rgba(255, 23, 68, 0.05) !important;
+            box-shadow: 0 0 0 1px rgba(255, 23, 68, 0.2) !important;
+        }
+
+        .form-group.error input:focus,
+        .form-group.error textarea:focus,
+        .form-group.error select:focus {
+            border-color: var(--rich-burgundy) !important;
+            background: rgba(255, 23, 68, 0.08) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 23, 68, 0.3) !important;
+        }
+
+        .error-message {
+            color: var(--rich-burgundy);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .form-group.error .error-message {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            display: none;
+            text-align: center;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.4s ease;
+        }
+
+        .success-message.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .luxury-submit {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            color: var(--warm-cream);
+            padding: 2.5rem 5rem;
+            border: 3px solid var(--deep-navy);
+            border-radius: 60px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 102, 255, 0.4);
+        }
+
+        .luxury-submit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0, 102, 255, 0.6);
+            background: linear-gradient(135deg, var(--electric-cyan) 0%, var(--bright-purple) 50%, var(--forest-green) 100%);
+        }
+
+        /* Urgency Section */
+        .urgency-section {
+            background: var(--luxury-black);
+            color: var(--warm-cream);
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-charcoal);
+            color: var(--warm-cream);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo .logo-image {
+            filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3));
+            background: url('./unicorn-dogs-logo.png') center/contain no-repeat;
+        }
+
+        /* Enhanced Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 { font-size: 5rem; }
+            .section-title { font-size: 3.5rem; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            nav { padding: 0 2rem; }
+            .container { padding: 0 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 3.5rem; }
+            .case-study { 
+                grid-template-columns: 1fr; 
+                text-align: center;
+                gap: 3rem;
+            }
+            .case-study:nth-child(even) { grid-template-columns: 1fr; }
+            .trainer-content { 
+                grid-template-columns: 1fr; 
+                text-align: center;
+                gap: 4rem;
+            }
+            .features-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-grid { grid-template-columns: 1fr; }
+            .alternative-grid { grid-template-columns: 1fr; }
+            .case-details { grid-template-columns: 1fr; }
+            .section { padding: 6rem 0; }
+            nav { padding: 0 1rem; }
+            .container { padding: 0 1rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.8rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 2.5rem; }
+            .contact-form { padding: 3rem 2rem; }
+        }
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Loading animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--luxury-black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.8s ease;
+        }
+
+        .preloader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader {
+            width: 100px;
+            height: 100px;
+            border: 4px solid transparent;
+            border-top: 4px solid var(--gold-base);
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo-container">
+                <div class="logo-image"></div>
+                <div class="logo-text gold-foil">UNICORN DOGS</div>
+            </div>
+            <ul class="nav-links" role="navigation" aria-label="Main navigation">
+                <li><a href="#home" aria-label="Go to home section">Home</a></li>
+                <li><a href="#about" aria-label="Go to our story section">Our Story</a></li>
+                <li><a href="#gallery" aria-label="View our dogs gallery">Our Dogs</a></li>
+                <li><a href="#trainer" aria-label="Meet Susan, our trainer">Meet Susan</a></li>
+                <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button embossed-gold">Reserve Your Spot</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="gold-foil serif-heading">Unicorn Dogs</h1>
+            <div class="subtitle luxury-text">Skip the Headache. Meet Your Dream Dog Today.</div>
+            <p class="hero-description">Imagine bringing home a dog that already knows exactly how to be the ideal companion. No accidents, no chewed furniture, no embarrassing walks. Just a beautifully trained, well-mannered dog ready to seamlessly join your life from day one—whether you're working from home, traveling for business, or entertaining clients.</p>
+            
+            <a href="#contact" class="hero-cta embossed-gold">Find Your Perfect Match</a>
+        </div>
+    </section>
+
+    <!-- The Smart Alternative Section -->
+    <section class="section smart-alternative">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">The Smart Alternative to Puppy Chaos</h2>
+            
+            <div class="alternative-grid">
+                <div class="premium-card fade-in">
+                    <h3 class="serif-heading" style="color: var(--rich-brown); font-size: 2.2rem; margin-bottom: 2rem; font-weight: 700;">Skip 2+ Years of Training Headaches</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--rich-brown);">Puppies are cute, but they're also exhausting. Months of sleepless nights, destroyed belongings, and countless training sessions. Whether you're managing a demanding career or raising a family, you don't have time for that chaos. With a Unicorn Dog, you get all the joy of dog ownership without any of the frustration.</p>
+                </div>
+                
+                <div class="premium-card fade-in">
+                    <h3 class="serif-heading" style="color: var(--rich-brown); font-size: 2.2rem; margin-bottom: 2rem; font-weight: 700;">Premium Training Results at Unbeatable Value</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--rich-brown);">Professional dog training costs $3,000-$8,000 and takes months to complete. Purebred puppies often cost just as much—and still need all that training. Unicorn Dogs give you both: nationally-recognized training results and a reasonable investment.</p>
+                </div>
+                
+                <div class="premium-card fade-in">
+                    <h3 class="serif-heading" style="color: var(--rich-brown); font-size: 2.2rem; margin-bottom: 2rem; font-weight: 700;">Proven Track Record</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--rich-brown);">Our training methods have successfully rehabilitated hundreds of aggressive dogs and transformed rescue dogs into therapy dogs. When you adopt a Unicorn Dog, you're getting the same elite training that costs thousands elsewhere.</p>
+                </div>
+                
+                <div class="premium-card fade-in">
+                    <h3 class="serif-heading" style="color: var(--rich-brown); font-size: 2.2rem; margin-bottom: 2rem; font-weight: 700;">Guaranteed Success</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--rich-brown);">Every Unicorn Dog comes with lifetime support and our confidence guarantee. We've done the work so you can enjoy the results immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features - Why Different -->
+    <section class="section features-section">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Why Unicorn Dogs Are Different</h2>
+            <p style="text-align: center; font-size: 1.5rem; margin-bottom: 6rem; opacity: 0.9;">We deliver what every dog owner dreams of: an exceptionally well-behaved companion.</p>
+            
+            <div class="features-grid">
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 80 L20 50 Q20 45 25 45 L75 45 Q80 45 80 50 L80 80 Q80 85 75 85 L25 85 Q20 85 20 80 Z" fill="#3D2914" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M35 45 L35 35 Q35 30 40 30 L60 30 Q65 30 65 35 L65 45" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <rect x="30" y="55" width="8" height="12" rx="2" fill="#D4AF37"/>
+                            <rect x="46" y="55" width="8" height="12" rx="2" fill="#D4AF37"/>
+                            <rect x="62" y="55" width="8" height="12" rx="2" fill="#D4AF37"/>
+                            <path d="M50 25 L45 20 L50 15 L55 20 Z" fill="#FFE55C"/>
+                            <circle cx="50" cy="75" r="3" fill="#B8860B"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">Complete House Training</h3>
+                    <p>Never worry about accidents again. Your Unicorn Dog arrives fully house-trained and reliable, ready to integrate seamlessly into your home routine.</p>
+                </div>
+                
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#3D2914" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="25" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="#FFE55C" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="8" fill="#B8860B"/>
+                            <circle cx="50" cy="50" r="3" fill="#FFE55C"/>
+                            <path d="M50 15 L52 20 L50 25 L48 20 Z" fill="#D4AF37"/>
+                            <path d="M85 50 L80 52 L75 50 L80 48 Z" fill="#D4AF37"/>
+                            <path d="M50 85 L48 80 L50 75 L52 80 Z" fill="#D4AF37"/>
+                            <path d="M15 50 L20 48 L25 50 L20 52 Z" fill="#D4AF37"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">Reliable Obedience</h3>
+                    <p>Sits, stays, comes every time. No more hoping your dog will listen when it matters most. Professional-level obedience from day one.</p>
+                </div>
+                
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 70 Q20 65 25 65 L75 65 Q80 65 80 70 L80 75 Q80 80 75 80 L25 80 Q20 80 20 75 Z" fill="#3D2914"/>
+                            <ellipse cx="30" cy="65" rx="8" ry="3" fill="#D4AF37"/>
+                            <path d="M30 50 Q30 45 35 45 L35 65" fill="none" stroke="#B8860B" stroke-width="3"/>
+                            <path d="M35 45 L45 35 Q50 30 55 35 L65 45" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <circle cx="55" cy="30" r="8" fill="#FFE55C" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="52" cy="27" r="1" fill="#3D2914"/>
+                            <circle cx="58" cy="27" r="1" fill="#3D2914"/>
+                            <path d="M52 32 Q55 34 58 32" fill="none" stroke="#3D2914" stroke-width="1"/>
+                            <path d="M25 40 L30 45 L25 50" fill="none" stroke="#FFE55C" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">Excellent Leash Manners</h3>
+                    <p>Enjoyable walks from day one. No pulling, lunging, or embarrassing encounters. Perfect heel position and social confidence.</p>
+                </div>
+                
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="12" fill="#FFE55C" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="27" cy="27" r="1" fill="#3D2914"/>
+                            <circle cx="33" cy="27" r="1" fill="#3D2914"/>
+                            <path d="M27 33 Q30 35 33 33" fill="none" stroke="#3D2914" stroke-width="1"/>
+                            <circle cx="70" cy="30" r="12" fill="#D4AF37" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="67" cy="27" r="1" fill="#3D2914"/>
+                            <circle cx="73" cy="27" r="1" fill="#3D2914"/>
+                            <path d="M67 33 Q70 35 73 33" fill="none" stroke="#3D2914" stroke-width="1"/>
+                            <circle cx="30" cy="70" r="8" fill="#B8860B" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="28" cy="68" r="0.5" fill="#3D2914"/>
+                            <circle cx="32" cy="68" r="0.5" fill="#3D2914"/>
+                            <circle cx="70" cy="70" r="8" fill="#FFE55C" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="68" cy="68" r="0.5" fill="#3D2914"/>
+                            <circle cx="72" cy="68" r="0.5" fill="#3D2914"/>
+                            <ellipse cx="50" cy="50" rx="15" ry="8" fill="#D4AF37" stroke="#3D2914" stroke-width="2"/>
+                            <circle cx="47" cy="47" r="1" fill="#3D2914"/>
+                            <circle cx="53" cy="47" r="1" fill="#3D2914"/>
+                            <path d="M47 53 Q50 55 53 53" fill="none" stroke="#3D2914" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">Social Confidence</h3>
+                    <p>Great with kids, other dogs, and strangers. Perfectly socialized for any situation, from busy family gatherings to professional settings.</p>
+                </div>
+                
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                            <path d="M35 35 L65 65" stroke="#3D2914" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M65 35 L35 65" stroke="#3D2914" stroke-width="4" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="20" fill="rgba(255, 229, 92, 0.2)" stroke="#FFE55C" stroke-width="2"/>
+                            <path d="M40 40 L60 60" stroke="#B8860B" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M60 40 L40 60" stroke="#B8860B" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="50" cy="25" r="4" fill="#FFE55C"/>
+                            <path d="M46 21 L50 15 L54 21" fill="#D4AF37"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">Zero Behavioral Issues</h3>
+                    <p>No jumping, barking, or destructive habits. Just a well-mannered companion who enhances your lifestyle instead of disrupting it.</p>
+                </div>
+                
+                <div class="luxury-feature fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="65" rx="25" ry="20" fill="#FFE55C" stroke="#3D2914" stroke-width="2"/>
+                            <ellipse cx="35" cy="55" rx="8" ry="12" fill="#D4AF37" stroke="#3D2914" stroke-width="1"/>
+                            <ellipse cx="65" cy="55" rx="8" ry="12" fill="#D4AF37" stroke="#3D2914" stroke-width="1"/>
+                            <circle cx="42" cy="60" r="2" fill="#3D2914"/>
+                            <circle cx="58" cy="60" r="2" fill="#3D2914"/>
+                            <ellipse cx="50" cy="70" rx="4" ry="2" fill="#3D2914"/>
+                            <path d="M45 75 Q50 78 55 75" fill="none" stroke="#3D2914" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M42 40 L50 25 L58 40" fill="#B8860B" stroke="#3D2914" stroke-width="1"/>
+                            <circle cx="35" cy="20" r="8" fill="rgba(255, 229, 92, 0.3)" stroke="#FFE55C" stroke-width="2"/>
+                            <path d="M30 15 L35 10 L40 15 L35 20 Z" fill="#D4AF37"/>
+                            <circle cx="65" cy="30" r="6" fill="rgba(212, 175, 55, 0.3)" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M61 26 L65 22 L69 26 L65 30 Z" fill="#FFE55C"/>
+                        </svg>
+                    </div>
+                    <h3 class="serif-heading gold-foil">You're Saving a Life</h3>
+                    <p>Every Unicorn Dog is a rescue who found their second chance through training. Premium companionship with the joy of saving a life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Meet Our Amazing Rescues</h2>
+            <p style="text-align: center; font-size: 1.4rem; margin-bottom: 5rem; color: var(--rich-brown);">Every photo tells a transformation story - from shelter dog to perfect companion</p>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=700&fit=crop&auto=format" alt="Luna - Therapy Dog Success Story" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Luna - Golden Mix</h4>
+                        <p>Rescued at 2 years old, now a certified therapy dog with perfect temperament for families with young children.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=700&fit=crop&auto=format" alt="Max - Perfect Family Dog" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Max - Lab Mix</h4>
+                        <p>Perfect family companion who loves children and has mastered advanced obedience training. Great with other pets.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&h=700&fit=crop&auto=format" alt="Bella - Professional Guard Dog" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Bella - Shepherd Mix</h4>
+                        <p>Professional guard dog training combined with gentle family temperament. The perfect protector and companion.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=700&fit=crop&auto=format" alt="Charlie - Apartment Perfect" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Charlie - Terrier Mix</h4>
+                        <p>Small but mighty, perfect apartment companion with excellent social skills and impeccable house manners.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=800&h=700&fit=crop&auto=format" alt="Rocky - Amazing Transformation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Rocky - Pit Mix</h4>
+                        <p>Incredible transformation from aggressive rescue to gentle, well-behaved family member. Proof that any dog can change.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=800&h=700&fit=crop&auto=format" alt="Daisy - Adventure Companion" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Daisy - Beagle Mix</h4>
+                        <p>Expert tracking skills and boundless energy, perfect for active families who love outdoor adventures and hiking.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&h=700&fit=crop&auto=format" alt="Sophie - Senior Companion" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Sophie - Golden Retriever</h4>
+                        <p>Mature, calm companion perfect for seniors or those wanting a relaxed, well-trained dog with years of wisdom.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&h=700&fit=crop&auto=format" alt="Zeus - Gentle Giant" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Zeus - Great Dane Mix</h4>
+                        <p>Gentle giant with impeccable training, perfect for families with space and big hearts. Loves being a couch companion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="about" class="section case-studies">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Real Success Stories</h2>
+            
+            <div class="premium-card case-study fade-in">
+                <div class="case-image case-image-1"></div>
+                <div class="case-content">
+                    <h3 class="serif-heading">🏠 The Jackson Family - 7 Kids Need a Gentle Giant</h3>
+                    <div class="luxury-quote">With seven kids ranging from 1 to 18, we knew we couldn't handle training a puppy while managing such a busy household. We needed a calm, gentle dog who could handle little hands, sudden movements, and the chaos of a large family. Unicorn Dogs matched us with Bear, a 4-year-old Golden Retriever mix rescue who had completed their full training program.</div>
+                    
+                    <div class="case-details">
+                        <div class="detail-card">
+                            <h4>The Family's Need</h4>
+                            <p>Safe, gentle companion for 7 children (ages 1-18)</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>The Match</h4>
+                            <p>Bear - rescued dog, pre-trained for child interaction</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>The Result</h4>
+                            <p>Perfect family protector + life saved</p>
+                        </div>
+                    </div>
+                    
+                    <p><strong>The Result:</strong> <em>"Bear is incredible with all the kids. He sits calmly while the toddler climbs on him, never jumps on anyone, and actually helps redirect the little ones when they get too wild. We can't imagine having gone through puppy training with seven kids in the house! Plus, we saved a life - Bear was a shelter dog who just needed the right training to become our family's protector."</em></p>
+                </div>
+            </div>
+
+            <div class="premium-card case-study fade-in">
+                <div class="case-image case-image-2"></div>
+                <div class="case-content">
+                    <h3 class="serif-heading">🏃‍♀️ Dr. Sarah Chen - Busy Professional Needs Security & Exercise Partner</h3>
+                    <div class="luxury-quote">As a surgeon working long hours, I wanted a dog who could be my running partner and provide security for my home. I didn't have time for months of training, and I needed a dog I could trust immediately.</div>
+                    
+                    <div class="case-details">
+                        <div class="detail-card">
+                            <h4>The Professional's Need</h4>
+                            <p>Trained running companion and home security</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>The Match</h4>
+                            <p>Rex - rescued German Shepherd with advanced training</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>The Result</h4>
+                            <p>Perfect working partner + second chance at life</p>
+                        </div>
+                    </div>
+                    
+                    <p><strong>The Result:</strong> <em>"Rex runs 5 miles with me every morning in complete heel position, no leash needed. At home, he's alert but controlled - he'll bark once to let me know someone's at the door, then immediately sits and waits for my command. Exactly what I needed, no training required. The best part? Rex was a rescue who was returned twice before finding his way to Unicorn Dogs. Now he has his dream job as my protector and running partner!"</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section id="trainer" class="section trainer-section">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Meet Your Head Trainer: Susan</h2>
+            <div class="trainer-content">
+                <div class="trainer-image">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="70" r="35" fill="#FFE55C" stroke="#3D2914" stroke-width="3"/>
+                        <circle cx="90" cy="65" r="3" fill="#3D2914"/>
+                        <circle cx="110" cy="65" r="3" fill="#3D2914"/>
+                        <path d="M90 80 Q100 85 110 80" fill="none" stroke="#3D2914" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M75 50 Q80 45 85 50 Q90 55 85 60 Q80 55 75 50" fill="#D4AF37"/>
+                        <path d="M115 50 Q120 45 125 50 Q120 55 115 60 Q120 55 125 50" fill="#D4AF37"/>
+                        <ellipse cx="100" cy="130" rx="40" ry="60" fill="#B8860B" stroke="#3D2914" stroke-width="3"/>
+                        <rect x="80" y="180" width="15" height="25" rx="7" fill="#3D2914"/>
+                        <rect x="105" y="180" width="15" height="25" rx="7" fill="#3D2914"/>
+                        <ellipse cx="60" cy="140" rx="12" ry="30" fill="#D4AF37" stroke="#3D2914" stroke-width="2"/>
+                        <ellipse cx="140" cy="140" rx="12" ry="30" fill="#D4AF37" stroke="#3D2914" stroke-width="2"/>
+                        <circle cx="70" cy="25" r="15" fill="none" stroke="#FFE55C" stroke-width="3"/>
+                        <path d="M65 20 L70 10 L75 20" fill="#D4AF37"/>
+                        <circle cx="130" cy="35" r="12" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                        <path d="M126 31 L130 22 L134 31" fill="#FFE55C"/>
+                        <path d="M50 120 Q40 110 30 120 Q35 130 45 125" fill="#FFE55C"/>
+                        <path d="M150 120 Q160 110 170 120 Q165 130 155 125" fill="#FFE55C"/>
+                    </svg>
+                </div>
+                <div class="trainer-info">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 2rem;" class="gold-foil serif-heading">16+ Years of Elite Training Experience</h3>
+                    <p>Susan has been training dogs with Sit Means Sit since 2008 and is a certified Canine Good Citizen Evaluator. Her expertise has successfully transformed aggressive rescue dogs into confident therapy dogs. Using Sit Means Sit's nationally recognized training system, she's mastered the balanced approach that creates reliable, well-behaved companions.</p>
+                    
+                    <p>With over a decade and a half of experience, Susan specializes in rehabilitation training that turns even the most challenging behavioral cases into perfect family companions. Her work has been recognized nationally, and her methods have been featured across major media networks.</p>
+                    
+                    <h4 style="margin-top: 3rem; color: var(--gold-base);">Featured on Major Networks:</h4>
+                    <div class="media-badges">
+                        <div class="media-badge">CNN</div>
+                        <div class="media-badge">Animal Planet</div>
+                        <div class="media-badge">The Today Show</div>
+                        <div class="media-badge">ESPN</div>
+                        <div class="media-badge">Fox News</div>
+                        <div class="media-badge">Discovery Channel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="section urgency-section">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Limited Availability</h2>
+            <p style="font-size: 1.5rem; margin: 3rem auto; max-width: 900px; line-height: 1.7;">Unlike puppy mills or traditional rescues, we only work with a select number of dogs at a time. Each dog receives 15+ days of intensive, one-on-one training before becoming available.</p>
+            <p style="font-size: 1.4rem; margin: 2rem 0;"><strong class="gold-foil">Current availability:</strong> Only 3-5 Unicorn Dogs become available each month due to our comprehensive training process.</p>
+            <p style="font-size: 1.3rem; opacity: 0.9;"><em>Current Wait List: 2-3 weeks for next available Unicorn Dog</em></p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title gold-foil serif-heading">Ready to Meet Your Unicorn?</h2>
+            <p style="text-align: center; margin-bottom: 5rem; font-size: 1.4rem;">No more waiting. No more training. Your exceptionally trained companion is ready now.</p>
+            
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-describedby="name-error">
+                            <div class="error-message" id="name-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                            <div class="error-message" id="email-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required aria-describedby="phone-error" placeholder="(555) 123-4567">
+                            <div class="error-message" id="phone-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="household">Household Composition</label>
+                            <select id="household" name="household" aria-describedby="household-description">
+                                <option value="">Select your situation</option>
+                                <option value="single-professional">Single Professional</option>
+                                <option value="couple-no-kids">Couple - No Children</option>
+                                <option value="young-family">Young Family (Kids under 10)</option>
+                                <option value="large-family">Large Family (Multiple children)</option>
+                                <option value="empty-nesters">Empty Nesters</option>
+                                <option value="seniors">Seniors</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lifestyle">Lifestyle & Needs</label>
+                            <select id="lifestyle" name="lifestyle" aria-describedby="lifestyle-description">
+                                <option value="">What do you need from your dog?</option>
+                                <option value="family-companion">Family Companion</option>
+                                <option value="exercise-partner">Exercise/Running Partner</option>
+                                <option value="security">Home Security</option>
+                                <option value="therapy-support">Emotional Support</option>
+                                <option value="low-maintenance">Low Maintenance Companion</option>
+                                <option value="social-dog">Social/Outgoing Dog</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Dog Experience Level</label>
+                            <select id="experience" name="experience" aria-describedby="experience-description">
+                                <option value="">Select your experience</option>
+                                <option value="first-time">First-time Dog Owner</option>
+                                <option value="some-experience">Some Experience</option>
+                                <option value="very-experienced">Very Experienced</option>
+                                <option value="professional">Professional/Trainer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="timeline">When are you ready to adopt?</label>
+                            <select id="timeline" name="timeline" aria-describedby="timeline-description">
+                                <option value="">Select timeline</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="2-4-weeks">2-4 Weeks</option>
+                                <option value="1-3-months">1-3 Months</option>
+                                <option value="exploring">Just Exploring</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Tell us more about what you're looking for</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Describe your ideal dog, living situation, any specific needs..." aria-describedby="message-description"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="success-message" id="success-message" role="alert" aria-live="polite"></div>
+                    <button type="submit" class="luxury-submit embossed-gold" aria-describedby="submit-description">Schedule My Meet & Greet</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <div class="logo-image"></div>
+                <h3 class="gold-foil serif-heading">UNICORN DOGS</h3>
+            </div>
+            <p style="font-size: 1.3rem; margin: 2rem 0;">Where Nationally-Recognized Training Meets Outstanding Companions</p>
+            <p style="font-size: 1.1rem;">Albuquerque, New Mexico</p>
+            <p style="margin: 2rem 0; font-size: 1.1rem;"><em class="gold-foil">As Seen On: CNN • Animal Planet • The Today Show • ESPN • Fox News</em></p>
+            <p style="margin-top: 3rem;">Certified Training Facility | Therapy Dog Specialists | Lifetime Support Included</p>
+            <p style="margin-top: 3rem; opacity: 0.7;">&copy; 2025 Unicorn Dogs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Preloader with error handling
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.classList.add('hidden');
+                }
+            }, 1200);
+        });
+
+        // Enhanced Header scroll effect with null check
+        const handleScroll = () => {
+            const header = document.getElementById('header');
+            if (header) {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+        };
+
+        // Smooth scrolling with offset and error handling
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                if (anchor) {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            const offsetTop = target.offsetTop - 120;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                }
+            });
+        });
+
+        // Enhanced Intersection Observer for animations with error handling
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 150);
+                }
+            });
+        }, observerOptions);
+
+        // Wait for DOM to be ready before observing elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                if (el) {
+                    observer.observe(el);
+                }
+            });
+        });
+
+        // Enhanced form submission with inline validation
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                // Clear error function
+                function clearError(fieldName) {
+                    const field = document.querySelector(`#${fieldName}`);
+                    if (field && field.parentElement) {
+                        const formGroup = field.parentElement;
+                        formGroup.classList.remove('error');
+                    }
+                }
+                
+                // Show error function
+                function showError(fieldName, message) {
+                    const field = document.querySelector(`#${fieldName}`);
+                    if (field && field.parentElement) {
+                        const formGroup = field.parentElement;
+                        const errorDiv = formGroup.querySelector('.error-message');
+                        if (errorDiv) {
+                            formGroup.classList.add('error');
+                            errorDiv.textContent = message;
+                        }
+                    }
+                }
+                
+                // Real-time validation - only add if elements exist
+                ['name', 'email', 'phone'].forEach(fieldName => {
+                    const field = document.querySelector(`#${fieldName}`);
+                    if (field) {
+                        field.addEventListener('blur', function() {
+                            validateField(fieldName, this.value);
+                        });
+                        field.addEventListener('input', function() {
+                            if (this.parentElement && this.parentElement.classList.contains('error')) {
+                                validateField(fieldName, this.value);
+                            }
+                        });
+                    }
+                });
+                
+                function validateField(fieldName, value) {
+                    switch(fieldName) {
+                        case 'name':
+                            if (!value || value.trim().length < 2) {
+                                showError('name', 'Please enter a valid name (at least 2 characters).');
+                                return false;
+                            }
+                            break;
+                        case 'email':
+                            if (!value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                                showError('email', 'Please enter a valid email address.');
+                                return false;
+                            }
+                            break;
+                        case 'phone':
+                            const phoneRegex = /^[\+]?[1-9]?[\d\s\-\(\)\.]{10,}$/;
+                            if (!value || !phoneRegex.test(value.replace(/\s+/g, ''))) {
+                                showError('phone', 'Please enter a valid phone number (at least 10 digits).');
+                                return false;
+                            }
+                            break;
+                    }
+                    clearError(fieldName);
+                    return true;
+                }
+                
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Validate all required fields
+                    let isValid = true;
+                    isValid = validateField('name', data.name) && isValid;
+                    isValid = validateField('email', data.email) && isValid;
+                    isValid = validateField('phone', data.phone) && isValid;
+                    
+                    if (!isValid) {
+                        // Scroll to first error
+                        const firstError = document.querySelector('.form-group.error');
+                        if (firstError) {
+                            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                        return;
+                    }
+                    
+                    // Enhanced success animation
+                    const button = this.querySelector('.luxury-submit');
+                    const successMessage = document.getElementById('success-message');
+                    
+                    if (button) {
+                        const originalText = button.textContent;
+                        
+                        button.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                        button.textContent = '✓ Message Sent Successfully!';
+                        button.style.transform = 'scale(1.05)';
+                        button.disabled = true;
+                        
+                        if (successMessage) {
+                            successMessage.textContent = '🌟 Thank you for your interest! We will contact you within 24 hours to schedule your meet & greet with our available Unicorn Dogs.';
+                            successMessage.style.display = 'block';
+                            // Trigger animation by adding class
+                            setTimeout(() => successMessage.classList.add('show'), 10);
+                        }
+                        
+                        setTimeout(() => {
+                            this.reset();
+                            button.style.background = '';
+                            button.textContent = originalText;
+                            button.style.transform = '';
+                            button.disabled = false;
+                            if (successMessage) {
+                                successMessage.style.display = 'none';
+                            }
+                            // Clear any error states
+                            document.querySelectorAll('.form-group.error').forEach(group => {
+                                group.classList.remove('error');
+                            });
+                        }, 5000);
+                    }
+                });
+            }
+        });
+
+        // Performance optimization: debounced scroll handler
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Optimized scroll handler for header
+        const optimizedScrollHandler = debounce(() => {
+            const scrolled = window.pageYOffset;
+            const header = document.getElementById('header');
+            
+            if (scrolled > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, 16);
+
+        window.addEventListener('scroll', optimizedScrollHandler);
+
+        console.log('✅ Unicorn Dogs website loaded successfully!');
+    </script>
+</body>
+</html>
