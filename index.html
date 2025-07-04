@@ -1,4 +1,18 @@
-.trainer-image {
+@media (max-width: 950px) {
+            .nav-links {
+                gap: 2rem;
+            }
+            .nav-links a {
+                font-size: 0.85rem;
+            }
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.8rem;
+            }
+            .logo-text {
+                font-size: 1.6rem;
+            }
+        }            .trainer-image {
                 width: 250px;
                 height: 250px;
                 margin: 0 auto 2rem;
@@ -227,10 +241,10 @@
 
         .logo-text {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 600;
             color: var(--rich-brown);
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
             transition: color 0.4s ease;
         }
 
@@ -811,12 +825,8 @@
             margin: 0 auto;
             box-shadow: 
                 0 20px 50px rgba(212, 175, 55, 0.2),
-                0 8px 25px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .trainer-image:hover {
-            transform: scale(1.05);
+                inset 0 4px 8px rgba(255, 255, 255, 0.3),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .trainer-image::before {
@@ -836,13 +846,11 @@
         }
 
         .media-badge {
-            background: rgba(212, 175, 55, 0.1);
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
+            background: rgba(212, 175, 55, 0.15);
+            padding: 1rem 2rem;
+            border-radius: 30px;
             border: 2px solid var(--gold-base);
             font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--rich-brown);
             transition: all 0.3s ease;
         }
 
@@ -1053,6 +1061,17 @@
                 width: 350px;
                 min-height: 280px;
             }
+            /* Menu responsiveness fixes */
+            .nav-links {
+                gap: 2.5rem;
+            }
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 0.85rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1253,10 +1272,9 @@
         <nav>
             <div class="logo-container">
                 <div class="logo-image"></div>
-                <div class="logo-text gold-foil">UNICORN DOGS</div>
+                <div class="logo-text gold-foil">ADOPT UNICORN DOGS</div>
             </div>
             <ul class="nav-links" role="navigation" aria-label="Main navigation">
-                <li><a href="#home" aria-label="Go to home section">Home</a></li>
                 <li><a href="#about" aria-label="Go to our story section">Our Story</a></li>
                 <li><a href="#gallery" aria-label="View our dogs gallery">Our Dogs</a></li>
                 <li><a href="#trainer" aria-label="Meet Susan, our trainer">Meet Susan</a></li>
@@ -1563,12 +1581,12 @@
             <div class="trainer-content">
                 <div class="trainer-image"></div>
                 <div class="trainer-info">
-                    <h3 style="font-size: 3rem; margin-bottom: 2rem; line-height: 1.2;" class="gold-foil serif-heading">16+ Years of Elite Training Experience</h3>
-                    <p style="font-size: 1.3rem; line-height: 1.7; margin-bottom: 2rem; color: var(--deep-charcoal);">Susan has been training dogs with Sit Means Sit since 2008 and is a certified Canine Good Citizen Evaluator. Her expertise has successfully transformed aggressive rescue dogs into confident therapy dogs. Using Sit Means Sit's nationally recognized training system, she's mastered the balanced approach that creates reliable, well-behaved companions.</p>
+                    <h3 style="font-size: 2.5rem; margin-bottom: 2rem;" class="gold-foil serif-heading">16+ Years of Elite Training Experience</h3>
+                    <p>Susan has been training dogs with Sit Means Sit since 2008 and is a certified Canine Good Citizen Evaluator. Her expertise has successfully transformed aggressive rescue dogs into confident therapy dogs. Using Sit Means Sit's nationally recognized training system, she's mastered the balanced approach that creates reliable, well-behaved companions.</p>
                     
-                    <p style="font-size: 1.3rem; line-height: 1.7; margin-bottom: 3rem; color: var(--deep-charcoal);">With over a decade and a half of experience, Susan specializes in rehabilitation training that turns even the most challenging behavioral cases into perfect family companions. Her work has been recognized nationally, and her methods have been featured across major media networks.</p>
+                    <p>With over a decade and a half of experience, Susan specializes in rehabilitation training that turns even the most challenging behavioral cases into perfect family companions. Her work has been recognized nationally, and her methods have been featured across major media networks.</p>
                     
-                    <h4 style="margin-top: 3rem; color: var(--rich-brown); font-size: 1.4rem; font-weight: 600;">Featured on Major Networks:</h4>
+                    <h4 style="margin-top: 3rem; color: var(--gold-base);">Featured on Major Networks:</h4>
                     <div class="media-badges">
                         <div class="media-badge">CNN</div>
                         <div class="media-badge">Animal Planet</div>
