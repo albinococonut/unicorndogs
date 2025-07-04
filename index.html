@@ -1046,6 +1046,57 @@
             font-size: 1.1rem;
         }
 
+        /* Contact Step Styles */
+        .contact-step {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .contact-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .contact-input {
+            width: 100%;
+            padding: 1.5rem;
+            border: 2px solid var(--gold-base);
+            border-radius: 15px;
+            font-size: 1.1rem;
+            background: var(--soft-ivory);
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--gold-dark);
+            background: var(--pearl-white);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .submit-contact {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
+            color: white;
+            border: none;
+            padding: 1.5rem 3rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+        }
+
+        .submit-contact:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 102, 255, 0.4);
+        }
+
         /* Results Page Styles */
         .results-container {
             text-align: center;
@@ -1266,6 +1317,10 @@
             }
             .results-title {
                 font-size: 2.2rem;
+            }
+            .contact-form-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
             }
         }
 
@@ -1769,6 +1824,21 @@
                     </div>
                 </div>
 
+                <!-- Contact Step -->
+                <div class="contact-step hidden" id="contactStep">
+                    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--rich-brown); margin-bottom: 1rem;">Almost There!</h2>
+                    <p style="font-size: 1.2rem; color: var(--muted-sage); margin-bottom: 2rem;">We need your contact info to send your personalized Unicorn Dog match</p>
+                    
+                    <form id="contactForm" class="contact-form-grid">
+                        <input type="text" id="firstName" placeholder="First Name" class="contact-input" required>
+                        <input type="text" id="lastName" placeholder="Last Name" class="contact-input" required>
+                        <input type="email" id="email" placeholder="Email Address" class="contact-input" required style="grid-column: 1 / -1;">
+                        <input type="tel" id="phone" placeholder="Phone Number" class="contact-input" required style="grid-column: 1 / -1;">
+                    </form>
+                    
+                    <button class="submit-contact" onclick="submitContact()">Get My Dog Match! 🐕</button>
+                </div>
+
                 <!-- Results Screen -->
                 <div class="results-container hidden" id="resultsContainer">
                     <div class="results-icon">🎉</div>
@@ -2002,12 +2072,34 @@
         }
 
         function finishQuiz() {
-            // Show loading screen
+            // Show contact step instead of loading
             document.getElementById('questionContainer').style.display = 'none';
             document.getElementById('quizNavigation').style.display = 'none';
+            document.getElementById('contactStep').classList.remove('hidden');
+        }
+
+        function submitContact() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Basic validation
+            if (!firstName || !lastName || !email || !phone) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // Store contact info
+            answers.firstName = firstName;
+            answers.lastName = lastName;
+            answers.email = email;
+            answers.phone = phone;
+            
+            // Show loading then results
+            document.getElementById('contactStep').classList.add('hidden');
             document.getElementById('loadingScreen').style.display = 'block';
             
-            // Simulate processing time
             setTimeout(() => {
                 showResults();
             }, 3000);
@@ -2030,8 +2122,12 @@
             selectedAnswer = null;
             
             document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('contactStep').classList.add('hidden');
             document.getElementById('questionContainer').style.display = 'flex';
             document.getElementById('quizNavigation').style.display = 'flex';
+            
+            // Clear contact form
+            document.getElementById('contactForm').reset();
             
             initQuiz();
         }
