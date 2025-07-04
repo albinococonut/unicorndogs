@@ -577,7 +577,7 @@
             display: grid;
             grid-template-columns: 400px 1fr;
             gap: 5rem;
-            align-items: center;
+            align-items: flex-start;
             margin: 8rem 0;
         }
 
@@ -587,7 +587,8 @@
 
         .case-image {
             width: 400px;
-            height: 320px;
+            min-height: 320px;
+            height: auto;
             border-radius: 25px;
             background-size: cover;
             background-position: center;
@@ -609,16 +610,16 @@
         }
 
         .case-image-1 { 
-            background: url('https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=800&h=640&fit=crop&auto=format') center/cover no-repeat;
+            background: url('https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=600&h=400&fit=crop&auto=format&q=80') center/cover no-repeat;
         }
         
         .case-image-2 { 
-            background: url('https://images.unsplash.com/photo-1544568100-847a948585b9?w=800&h=640&fit=crop&auto=format') center/cover no-repeat;
+            background: url('https://images.unsplash.com/photo-1544568100-847a948585b9?w=600&h=400&fit=crop&auto=format&q=80') center/cover no-repeat;
         }
 
         .luxury-quote {
             font-style: italic;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             line-height: 1.8;
             color: var(--rich-brown);
             margin: 3rem 0;
@@ -667,6 +668,19 @@
             position: relative;
         }
 
+        .detail-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--rich-brown);
+            font-weight: 600;
+        }
+
+        .detail-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--rich-brown);
+        }
+
         .detail-card::before {
             content: '';
             position: absolute;
@@ -696,104 +710,66 @@
             margin: 6rem 0;
         }
 
-        /* Enhanced Features with 3D Depth */
+        /* Enhanced Features with Clean Design */
         .luxury-feature {
             text-align: center;
-            padding: 3rem;
-            background: 
-                linear-gradient(145deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.08)),
-                rgba(212, 175, 55, 0.1);
-            border-radius: 25px;
-            border: 1px solid var(--gold-base);
-            transition: all 0.6s ease;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s ease;
             position: relative;
-            box-shadow: 
-                0 10px 25px rgba(212, 175, 55, 0.15),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1),
-                inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
 
         .luxury-feature::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gold-foil-bg);
-            opacity: 0;
-            border-radius: 25px;
-            transition: opacity 0.4s ease;
-            z-index: -1;
+            display: none;
         }
 
         .luxury-feature::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, rgba(212, 175, 55, 0.3), transparent, rgba(212, 175, 55, 0.3));
-            border-radius: 27px;
-            z-index: -2;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .luxury-feature:hover::before {
-            opacity: 0.2;
-        }
-
-        .luxury-feature:hover::after {
-            opacity: 1;
+            display: none;
         }
 
         .luxury-feature:hover {
-            transform: translateY(-20px) scale(1.08);
-            box-shadow: 
-                0 30px 70px rgba(212, 175, 55, 0.3),
-                0 10px 30px rgba(0, 0, 0, 0.15),
-                inset 0 2px 0 rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
         }
 
         .feature-icon {
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
             margin: 0 auto 2rem;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            background: linear-gradient(145deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
-            box-shadow: 
-                0 10px 25px rgba(212, 175, 55, 0.2),
-                inset 0 2px 4px rgba(255, 255, 255, 0.3),
-                inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, var(--gold-base), var(--gold-dark));
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
         }
 
         .feature-icon::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--bright-purple) 50%, var(--rich-burgundy) 100%);
-            z-index: -1;
-            opacity: 0.2;
+            display: none;
         }
 
         .feature-icon svg {
-            width: 60px;
-            height: 60px;
-            filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
         }
 
         .luxury-feature h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: 1.5rem;
             font-weight: 600;
+        }
+
+        .luxury-feature p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
         }
 
         /* Trainer Section Enhanced */
@@ -1056,6 +1032,14 @@
             .gallery-grid { grid-template-columns: repeat(3, 1fr); }
             nav { padding: 0 2rem; }
             .container { padding: 0 2rem; }
+            .case-study {
+                grid-template-columns: 350px 1fr;
+                gap: 3rem;
+            }
+            .case-image {
+                width: 350px;
+                min-height: 280px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1065,8 +1049,37 @@
                 grid-template-columns: 1fr; 
                 text-align: center;
                 gap: 3rem;
+                margin: 4rem 0;
             }
-            .case-study:nth-child(even) { grid-template-columns: 1fr; }
+            .case-study:nth-child(even) { 
+                grid-template-columns: 1fr; 
+                direction: ltr;
+            }
+            .case-image {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                min-height: 250px;
+                background-size: cover !important;
+                background-position: center !important;
+            }
+            .case-content {
+                order: 2;
+            }
+            .luxury-quote {
+                font-size: 1.3rem;
+                padding: 2rem;
+                text-align: left;
+            }
+            .detail-card {
+                padding: 2rem;
+            }
+            .detail-card h4 {
+                font-size: 1.2rem;
+            }
+            .detail-card p {
+                font-size: 1rem;
+            }
             .trainer-content { 
                 grid-template-columns: 1fr; 
                 text-align: center;
@@ -1087,6 +1100,62 @@
             .gallery-grid { grid-template-columns: 1fr; }
             .section-title { font-size: 2.5rem; }
             .contact-form { padding: 3rem 2rem; }
+            .case-study {
+                margin: 3rem 0;
+                gap: 2rem;
+                display: block;
+            }
+            .case-image {
+                width: 100%;
+                min-height: 200px;
+                max-width: 100%;
+                margin-bottom: 2rem;
+                background-size: cover !important;
+                background-position: center !important;
+                border-radius: 15px;
+            }
+            .case-content {
+                width: 100%;
+            }
+            .luxury-quote {
+                font-size: 1.1rem;
+                padding: 1.5rem;
+                margin: 2rem 0;
+                text-align: left;
+            }
+            .luxury-quote::before {
+                font-size: 2.5rem;
+                top: 5px;
+                left: 10px;
+            }
+            .luxury-quote::after {
+                font-size: 2.5rem;
+                bottom: -15px;
+                right: 10px;
+            }
+            .case-details {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+            .detail-card {
+                padding: 1.5rem;
+            }
+            .detail-card h4 {
+                font-size: 1.1rem;
+            }
+            .detail-card p {
+                font-size: 0.95rem;
+            }
+            .premium-card {
+                padding: 2rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .section {
+                padding: 4rem 0;
+            }
         }
 
         /* Reduce motion for users who prefer it */
